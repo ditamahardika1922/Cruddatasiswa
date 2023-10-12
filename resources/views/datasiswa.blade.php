@@ -9,11 +9,11 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Data Siswa Rayon Batara!</title>
+    <title>Data Siswa PSHT Rayon Batara </title>
 </head>
 
 <body>
-    <h1 class="text-center mb-5">Data Siswa Rayon Batara</h1>
+    <h1 class="text-center mb-5">Data Siswa PSHT Rayon Batara</h1>
 
     <div class="container">
         <button type="button" class="btn btn-success">Tambah Data</button>
