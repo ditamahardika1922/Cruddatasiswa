@@ -13,4 +13,8 @@ class EmployeeController extends Controller
         
             return view('datasiswa',compact('data'));
     }
+
+    public function tambahsiswa(){
+        return view('tambahsiswa');
+    }
 }

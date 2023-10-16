@@ -19,4 +19,5 @@ Route::get('/', function () {
 });
 
 Route::get('/siswa', [EmployeeController::class, 'index'])->name('siswa');
+Route::get('/tambahsiswa', [EmployeeController::class, 'tambahsiswa'])->name('tambahsiswa');
 
