@@ -21,13 +21,19 @@
             <div class="col-8">
 <div class="card">
     <div class="card-body">
-    <form>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Nama Siswa</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <form action="/insertdata" method="POST" enctype="multipart/form-data">
+      @csrf
+      
+      <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">ID</label>
+    <input type="text" name="id" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
   </div>
   <div class="mb-3">
-  <select class="form-select" aria-label="Default select example">
+    <label for="exampleInputEmail1" class="form-label">Nama Siswa</label>
+    <input type="text" name="namasiswa" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+  <select class="form-select" name="jeniskelamin" aria-label="Default select example">
   <option selected>Jenis Kelamin</option>
   <option value="lakilaki">Laki - Laki</option>
   <option value="wanita">Wanita</option>
@@ -36,22 +42,18 @@
 
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Alamat</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input type="text" name="alamat" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
   </div>
 
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">No. Telepon</label>
-    <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input type="number" name="notelpon" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
   </div>
 
-
-
-
-
-
+ 
   <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
+    <label for="exampleInputPassword1" class="form-label">Tingkat</label>
+    <input type="text" name="tingkat" class="form-control" id="exampleInputPassword1">
   </div>
  
   <button type="submit" class="btn btn-primary">Submit</button>

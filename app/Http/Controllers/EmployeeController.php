@@ -17,4 +17,11 @@ class EmployeeController extends Controller
     public function tambahsiswa(){
         return view('tambahsiswa');
     }
+
+
+    public function insertdata(Request $request){   
+        // dd($request->all());       
+        Employee::create($request->all());
+
+    }
 }
